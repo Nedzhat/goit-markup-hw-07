@@ -1,0 +1,36 @@
+.partners {
+
+    &__title {
+        @extend %title-font;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__link  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid getColor('partners-color');
+        border-radius: 4px;
+        color: getColor('partners-color');
+        @include animation2(color, border-color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: getColor('hover-color');
+        border-color: getColor('hover-color');
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,28 @@
+.principles {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        background-color: getColor('bg-2');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    &__title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: getColor('second-color');
+        line-height: 1.71;
+        width: 270px;
+    }
+}
